@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Computer Hardware</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Understanding Computer Hardware</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Introduction</h2>
+            <p id="intro-text">Computers are integral to modern life, and understanding their hardware components and basic functions is essential for anyone interested in technology. This guide provides a detailed overview of these components and functions, aiding both beginners and advanced learners.</p>
+            <button onclick="toggleIntro()">Toggle Introduction</button>
+        </section>
+        <section>
+            <h2>Components of Computer Hardware</h2>
+            <h3>Central Processing Unit (CPU)</h3>
+            <p>The CPU, often called the "brain" of the computer, is responsible for executing instructions from programs. It consists of millions of transistors acting as tiny switches to process data.</p>
+            <ul>
+                <li><strong>Arithmetic Logic Unit (ALU):</strong> Performs mathematical and logical operations.</li>
+                <li><strong>Control Unit (CU):</strong> Directs all operations within the CPU.</li>
+                <li><strong>Registers:</strong> Small storage locations for immediate data processing needs.</li>
+            </ul>
+            <h3>Memory</h3>
+            <p>Memory is crucial for storing and retrieving data. It is divided into primary and secondary storage.</p>
+            <ul>
+                <li><strong>RAM (Random Access Memory):</strong> Volatile memory used for temporary data storage while the computer is on.</li>
+                <li><strong>ROM (Read-Only Memory):</strong> Non-volatile memory used to store firmware.</li>
+                <li><strong>Secondary Storage:</strong> Includes HDDs (Hard Disk Drives), SSDs (Solid State Drives), and cloud storage for long-term data storage.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Basic Functions of a Computer</h2>
+            <table>
+                <tr>
+                    <th>Function</th>
+                    <th>Corresponding Unit</th>
+                    <th>Examples</th>
+                </tr>
+                <tr>
+                    <td>Input</td>
+                    <td>Input Unit</td>
+                    <td>Keyboard, Mouse, Scanner, Camera</td>
+                </tr>
+                <tr>
+                    <td>Processing</td>
+                    <td>Central Processing Unit</td>
+                    <td>ALU, CU, Registers</td>
+                </tr>
+                <tr>
+                    <td>Output</td>
+                    <td>Output Unit</td>
+                    <td>Monitor, Printer, Speakers</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>Storage Unit</td>
+                    <td>RAM, ROM, HDD, SSD, Cloud Storage</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Understanding the Binary Number System</h2>
+            <p id="binary-text">Binary is a base-2 number system using only two digits, 0 and 1. Computers use binary to perform all operations because it corresponds directly to the on/off states of transistors in the CPU.</p>
+            <button onclick="toggleBinaryInfo()">Toggle Detailed Info</button>
+            <div id="binary-info" style="display: none;">
+                <p><strong>Why Use Binary?</strong></p>
+                <ul>
+                    <li><strong>Simplicity in Digital Electronics:</strong> Binary makes it easier to design and implement digital circuits.</li>
+                    <li><strong>Reliability:</strong> Binary states (on/off) are less prone to error compared to multiple states in higher-base systems.</li>
+                </ul>
+                <p>All data and instructions in a computer are eventually translated into binary for processing. High-level programming languages are converted into binary code by compilers, enabling the CPU to execute the instructions.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Computer Science Resources</p>
+    </footer>
+</body>
+</html>
