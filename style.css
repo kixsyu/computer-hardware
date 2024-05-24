@@ -1,70 +1,131 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some basic styling */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    box-sizing: border-box;
 }
-header {
-    background: #50b3a2;
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    border-bottom: #e8491d 3px solid;
+
+/* Set default font properties */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #121212;
+    padding: 20px;
 }
+
+/* Container styling for general layout */
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
-section {
-    background: white;
-    margin: 20px 0;
+
+/* Styling for the header */
+header {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Main content styling */
+main {
+    background: #1e1e1e;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-h2, h3 {
-    color: #50b3a2;
+
+/* Styling for sections */
+section {
+    margin-bottom: 20px;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+
+section h2 {
+    font-size: 2em;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3e3e3e;
+    padding-bottom: 5px;
 }
-table, th, td {
-    border: 1px solid #ddd;
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #b0b0b0;
 }
-th, td {
-    padding: 8px;
-    text-align: left;
+
+/* Styling for buttons */
+button {
+    background: #00bcd4;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.3s;
+    margin: 5px;
 }
-th {
-    background-color: #50b3a2;
-    color: white;
+
+button:hover {
+    background: #0097a7;
 }
+
+button.drift-button:active {
+    transform: translateX(200px);
+}
+
+/* Styling for image container */
+.image-container {
+    margin-top: 20px;
+}
+
+.hover-image {
+    border-radius: 8px;
+    transition: transform 0.3s, opacity 0.3s;
+    max-width: 100%;
+}
+
+.hover-image:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Footer styling */
 footer {
-    background: #50b3a2;
-    color: white;
+    background: #1e1e1e;
+    color: #e0e0e0;
     text-align: center;
     padding: 10px 0;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-button {
-    background-color: #50b3a2;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-button:hover {
-    background-color: #45a094;
-}
-p {
-    transition: color 0.3s ease;
-}
-p:hover {
-    color: #50b3a2;
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
 }
