@@ -1,27 +1,29 @@
-/* Reset some basic styling */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set default font properties */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #e0e0e0;
     background: #121212;
     padding: 20px;
+    line-height: 3;
 }
 
-/* Container styling for general layout */
+
 .container {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
 }
 
-/* Styling for the header */
+.icon {
+    color: #0097a7;
+}
 header {
     background: #1e1e1e;
     color: #e0e0e0;
@@ -30,16 +32,34 @@ header {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+
+header {
+
+    background-color: #333;
+  
+    color: #fff;
+  
+    padding: 20px 0;
+  
+    text-align: center;
+  
+
+    font-size: 2.5em;
+  
+  }
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 4.5em;
     margin-bottom: 10px;
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-weight: 00;
+    letter-spacing: 3px;
+    color:#00bcd4;
+    line-height: 1.5;
 }
 
-/* Main content styling */
+
 main {
     background: #1e1e1e;
     padding: 20px;
@@ -47,7 +67,7 @@ main {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Styling for sections */
+
 section {
     margin-bottom: 20px;
 }
@@ -67,7 +87,7 @@ section p {
     color: #b0b0b0;
 }
 
-/* Styling for buttons */
+
 button {
     background: #00bcd4;
     color: #121212;
@@ -88,23 +108,30 @@ button.drift-button:active {
     transform: translateX(200px);
 }
 
-/* Styling for image container */
+
 .image-container {
     margin-top: 20px;
 }
 
-.hover-image {
-    border-radius: 8px;
-    transition: transform 0.3s, opacity 0.3s;
-    max-width: 100%;
+table {
+    border-collapse: separate;
+    border-spacing: 10px; 
+    width: 100%;
+    margin: 20px 0;
 }
 
-.hover-image:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px; 
+    text-align: left;
+    border-color: #0097a7;
 }
 
-/* Footer styling */
+
+
+
+
+
 footer {
     background: #1e1e1e;
     color: #e0e0e0;
@@ -115,7 +142,7 @@ footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Media query for responsiveness */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
@@ -124,6 +151,7 @@ footer {
     section h2 {
         font-size: 1.5em;
     }
+#f 
 
     section p {
         font-size: 1em;
